@@ -1,13 +1,7 @@
-/*-- Body --*/
 
 body{
     background-color: rgb(136, 136, 136);
 }
-
-/*-- /body --*/
-
-
-/*-- Header --*/
 
 header{
     text-align: center;
@@ -15,15 +9,32 @@ header{
     color: rgb(255, 255, 255);
 }
 
-/*-- /header --*/
-
-
-/*-- Section --*/
-
 h2{
     padding-top: 25px;
     text-align: center; 
     color: rgb(255, 255, 255);
 }
 
-/*-- /section --*/
+.container {
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: inline-block;
+    margin: 2px;
+    width: 65px;
+    height: 100px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: inset 0px 0px 0px 2px white;
+    box-sizing: border-box;
+}
