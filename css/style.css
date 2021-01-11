@@ -1,0 +1,29 @@
+/*-- Body --*/
+
+body{
+    background-color: rgb(136, 136, 136);
+}
+
+/*-- /body --*/
+
+
+/*-- Header --*/
+
+header{
+    text-align: center;
+    text-decoration: underline; 
+    color: rgb(255, 255, 255);
+}
+
+/*-- /header --*/
+
+
+/*-- Section --*/
+
+h2{
+    padding-top: 25px;
+    text-align: center; 
+    color: rgb(255, 255, 255);
+}
+
+/*-- /section --*/
