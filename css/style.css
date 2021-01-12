@@ -57,6 +57,7 @@ ul{
 }
 
 .hidden{
+    visibility: hidden;
     background: url("./images/cover.jpg") no-repeat;
 }
 
@@ -76,7 +77,7 @@ ul{
 }
 
 .deck .card.match {
-	cursor: default;
+	pointer-events: none;
 }
 
 .deck .card.unmatched {

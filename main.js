@@ -2,6 +2,9 @@
 let card = document.getElementsByClassName("card");
 let cards = [...card];
 
+// deck of all cards in game
+const deck = document.getElementById("card-deck");
+
 // setup moves counter
 let moves = 0;
 let counter = document.querySelector(".moves");
@@ -31,15 +34,23 @@ for (var i = 0; i < cards.length; i++){
     cards[i].addEventListener("click", displayCard);
 };
 
-// deck of all cards in game
-const deck = document.querySelector(".deck");
+
+// start a new game 
 function startGame(){
-   var shuffledCards = shuffle(cards);
-   for (var i= 0; i < shuffledCards.length; i++){
-      [].forEach.call(shuffledCards, function(item){
-        deck.appendChild(item);
-      });
-   }
+    // reset the openCards array
+    openedCards = [];
+
+    // shuffle deck
+    cards = shuffle(cards);
+    // remove all exisiting classes from each card
+    for (var i = 0; i < cards.length; i++){
+        deck.innerHTML = "";
+        [].forEach.call(cards, function(item) {
+            deck.appendChild(item);
+        });
+        cards[i].classList.remove("show", "open", "match", "disabled");
+    }
+
    // reset moves
     moves = 0;
     counter.innerHTML = moves;
