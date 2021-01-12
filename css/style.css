@@ -1,36 +1,50 @@
-
 body{
     background-color: rgb(136, 136, 136);
-}
-
-header{
     text-align: center;
-    text-decoration: underline; 
-    color: rgb(255, 255, 255);
-}
-
-h2{
-    padding-top: 25px;
-    text-align: center; 
-    color: rgb(255, 255, 255);
 }
 
 .container {
     margin: auto;
 }
 
-.row {
+h1 {
+    text-decoration: underline; 
+    color: rgb(255, 255, 255);
+}
+
+
+/*-- Score --*/
+
+.score {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+}
+button::hover {
+    box-shadow: inset 0px 0px 0px 2px black;
+    box-sizing: border-box;
+}
+.restart {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/*-- Game Board --*/
+
+.deck {
+    max-width: 350px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
 .card {
     display: inline-block;
     margin: 2px;
-    width: 65px;
     height: 100px;
-    background-color: black;
+    width: 65px;
+    background: url(../images/cover.jpg);
     cursor: pointer;
 }
 
@@ -38,3 +52,4 @@ h2{
     box-shadow: inset 0px 0px 0px 2px white;
     box-sizing: border-box;
 }
+

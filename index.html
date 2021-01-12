@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doc's Memory Game</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 
 <body>
-    <header>
-        <h1>Doc's Memory Game</h1>
-    </header>
-
-    <h2>(Score & Timer)</h2>
-
+    
     <div class="container">
-        <div class="row">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
+        <h1>Doc's Memory Game</h1>
 
-        <div class="row">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
+        <section class="score">
+            <p><button class="restart">Restart <i class="fa fa-repeat"></i></button></p>
+            <p><span class="moves">0</span> Moves | Time:<span class="timer">0</span> s</p>
+        </section>
 
-        <div class="row">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
-
-        <div class="row">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
+        <ul class="deck"></ul>
     </div>
- 
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
