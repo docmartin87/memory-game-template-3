@@ -56,6 +56,10 @@ ul{
     cursor: pointer;
 }
 
+.hidden{
+    background: url("./images/cover.jpg") no-repeat;
+}
+
 .card:hover {
     box-shadow: inset 0px 0px 0px 1px black;
     box-sizing: border-box;
@@ -69,6 +73,14 @@ ul{
 
 .deck .card.show {
     pointer-events: none;
+}
+
+.deck .card.match {
+	cursor: default;
+}
+
+.deck .card.unmatched {
+    cursor: default;
 }
 
 .deck .card.disabled {
