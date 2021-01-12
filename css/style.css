@@ -20,36 +20,83 @@ h1 {
     color: rgb(255, 255, 255);
     margin: 10px 0;
 }
-button::hover {
-    box-shadow: inset 0px 0px 0px 2px black;
+
+button:hover {
+    box-shadow: inset 0px 0px 0px 1px black;
     box-sizing: border-box;
 }
+
 .restart {
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
 /*-- Game Board --*/
+ul{
+    list-style-type: none;
+}
 
-.deck {
-    max-width: 350px;
+.deck{
+    max-width: 300px;
+    max-height: 500px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.card {
-    display: inline-block;
-    margin: 2px;
-    height: 100px;
+.deck .card {
     width: 65px;
-    background: url(../images/cover.jpg);
+    height: 100px;
+    margin: 5px;
+    background-image: url(../images/cover.jpg);
+    display: flex;
+	justify-content: center;
+	align-items: center;
     cursor: pointer;
 }
 
 .card:hover {
-    box-shadow: inset 0px 0px 0px 2px white;
+    box-shadow: inset 0px 0px 0px 1px black;
     box-sizing: border-box;
 }
 
+/*-- Matching Cards -*/
+
+.deck .card.open {
+	transform: rotateY(0);
+	background: #02b3e4;
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.deck .card.show {
+	font-size: 33px;
+}
+
+.deck .card.match {
+	cursor: default;
+	background: #E5F720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.deck .card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}

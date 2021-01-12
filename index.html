@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doc's Memory Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    
 </head>
 
 <body>
-    
+
     <div class="container">
+
         <h1>Doc's Memory Game</h1>
 
         <section class="score">
@@ -20,13 +20,27 @@
             <p><span class="moves">0</span> Moves | Time:<span class="timer">0</span> s</p>
         </section>
 
-        <ul class="deck"></ul>
+        <ul class="deck" id="card-deck">
+            <li class="card"><img src="./images/ace-hearts.jpg" alt="Ace of Hearts"></li>
+            <li class="card"><img src="./images/ace-hearts.jpg" alt="Ace of Hearts"></li>
+            <li class="card"><img src="./images/ace-spades.jpg" alt="Ace of Spades"></li>
+            <li class="card"><img src="./images/ace-spades.jpg" alt="Ace of Spades"></li>
+            <li class="card"><img src="./images/king-hearts.jpg" alt="King of Hearts"></li>
+            <li class="card"><img src="./images/king-hearts.jpg" alt="King of Hearts"></li>
+            <li class="card"><img src="./images/king-spades.jpg" alt="King of Spades"></li>
+            <li class="card"><img src="./images/king-spades.jpg" alt="King of Spades"></li>
+            <li class="card"><img src="./images/queen-hearts.jpg" alt="Queen of Hearts"></li>
+            <li class="card"><img src="./images/queen-hearts.jpg" alt="Queen of Hearts"></li>
+            <li class="card"><img src="./images/queen-spades.jpg" alt="Queen of Spades"></li>
+            <li class="card"><img src="./images/queen-spades.jpg" alt="Queen of Spades"></li>
+            <li class="card"><img src="./images/jack-hearts.jpg" alt="Jack of Hearts"></li>
+            <li class="card"><img src="./images/jack-hearts.jpg" alt="Jack of Hearts"></li>
+            <li class="card"><img src="./images/jack-spades.jpg" alt="Jack of Spades"></li>
+            <li class="card"><img src="./images/jack-spades.jpg" alt="Jack of Spades"></li>
+        </ul>
+
+
     </div>
-    
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
-
 </html>
