@@ -57,8 +57,7 @@ ul{
 }
 
 .hidden{
-    visibility: hidden;
-    background: url("./images/cover.jpg") no-repeat;
+    background-image: url("./images/cover.jpg") no-repeat;
 }
 
 .card:hover {
